@@ -1,6 +1,8 @@
 import React from "react";
 import ReactTyped from "react-typed";
-import { Container, Row, Col } from "reactstrap";
+import { Col } from "reactstrap";
+import { Link } from "react-scroll";
+import { FaAngleDown } from "react-icons/fa";
 
 function LandingPage() {
   return (
@@ -18,6 +20,17 @@ function LandingPage() {
             backDelay={5}
             smartBackspace
           />
+        </Col>
+        <Col className="d-none d-sm-block scroll-btn">
+          <Link to="profile" spy={true} smooth={true} duration={500}>
+            <FaAngleDown />
+          </Link>
+        </Col>
+
+        <Col className="d-block d-sm-none scroll-btn full">
+          <Link to="profile" spy={true} smooth={true} duration={500}>
+            <FaAngleDown />
+          </Link>
         </Col>
       </section>
     </div>

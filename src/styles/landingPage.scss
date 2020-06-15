@@ -2,12 +2,31 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30% 40%;
+  max-height: 100vh;
 
   .text {
     top: 28%;
     font-size: 5.3vh;
     color: white;
     position: absolute;
+  }
+
+  .scroll-btn {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 100px;
+    height: 80px;
+    background: tomato;
+    color: white;
+    text-align: center;
+    font-size: xxx-large;
+    cursor: pointer;
+  }
+
+  .scroll-btn.full {
+    width: 100% !important;
+    right: 0;
   }
 }
 
