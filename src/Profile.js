@@ -1,6 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { Col, Container, DropdownItem, Row } from "reactstrap";
+import { Col, Container, Dropdown, Row } from "react-bootstrap";
 
 const Profile = () => {
   return (
@@ -8,18 +8,20 @@ const Profile = () => {
       name="profile"
       style={{
         minHeight: 800,
+        paddingTop: 50,
       }}
       className="profile"
     >
       <Container className="profile-container">
         <h1 id="title">Profile</h1>
         <h5 id="description">I'm a creative javascript web developer</h5>
-        <DropdownItem divider />
+        <Dropdown.Divider />
 
-        <Row>
+        <Row className="mt-5">
           <Col
-            sm={{ size: 10, order: 2 }}
-            md={{ size: 4, order: 1 }}
+            xs={{ span: 10, order: 2 }}
+            md={{ span: 8, order: 2 }}
+            lg={{ span: 4, order: 1 }}
             className="aboutMe"
           >
             <h3>About me</h3>
@@ -34,14 +36,18 @@ const Profile = () => {
           </Col>
 
           <Col
-            sm={{ size: 10, order: 1 }}
-            md={{ size: 4, order: 2 }}
-            className="selfie"
-          ></Col>
+            xs={{ span: 10, order: 1 }}
+            md={{ span: 8, order: 1 }}
+            lg={{ span: 4, order: 2 }}
+            className="selfie-container"
+          >
+            <div className="selfie"></div>
+          </Col>
 
           <Col
-            sm={{ size: 10, order: 3 }}
-            md={{ size: 4, order: 3 }}
+            xs={{ span: 10, order: 3 }}
+            md={{ span: 8, order: 3 }}
+            lg={{ span: 4, order: 3 }}
             className="details"
           >
             <h3>Details</h3>
@@ -52,11 +58,13 @@ const Profile = () => {
               <p>San Francisco Bay Area</p>
               <strong>Education</strong>
               <p>
-                <header>Hack Reactor</header>
+                Hack Reactor
+                <br />
                 <i>Feb 2019 - May 2019</i>
               </p>
               <p>
-                <header>University of California, Davis</header>
+                University of California, Davis
+                <br />
                 <i>Sep 2013-Dec 2014</i>
               </p>
             </div>
