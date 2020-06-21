@@ -5,16 +5,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from "./LandingPage";
 import Nav from "./Nav";
 import Profile from "./Profile";
+import Experiences from "./Experiences";
 import * as serviceWorker from "./serviceWorker";
 // import { Link, Element, animateScroll as scroll, scroller } from "react-scroll";
 import { Provider as NavProvider } from "./context/NavContext";
-
 ReactDOM.render(
   <React.StrictMode>
     <NavProvider>
       <LandingPage />
       <Nav />
       <Profile />
+      <Experiences />
     </NavProvider>
   </React.StrictMode>,
   document.getElementById("root")
