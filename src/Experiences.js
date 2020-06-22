@@ -1,6 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { Row, Col, Container, Dropdown } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 
 const Experiences = () => {
   return (

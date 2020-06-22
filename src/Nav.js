@@ -54,7 +54,16 @@ const Nav = () => {
             >
               <li>Projects</li>
             </Link>
-            <Link>
+            <Link
+              activeClass="active-drop"
+              to="contact"
+              onClick={() => {
+                setShow(false);
+              }}
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               <li>Contact</li>
             </Link>
           </ul>
@@ -94,7 +103,13 @@ const Nav = () => {
           >
             <li>Projects</li>
           </Link>
-          <Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
             <li>Contact</li>
           </Link>
         </ul>

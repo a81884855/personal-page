@@ -6,8 +6,8 @@ import LandingPage from "./LandingPage";
 import Nav from "./Nav";
 import Profile from "./Profile";
 import Experiences from "./Experiences";
+import Contact from "./Contact";
 import * as serviceWorker from "./serviceWorker";
-// import { Link, Element, animateScroll as scroll, scroller } from "react-scroll";
 import { Provider as NavProvider } from "./context/NavContext";
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +16,7 @@ ReactDOM.render(
       <Nav />
       <Profile />
       <Experiences />
+      <Contact />
     </NavProvider>
   </React.StrictMode>,
   document.getElementById("root")
