@@ -18,22 +18,45 @@ const Nav = () => {
         </div>
         {show && (
           <ul className="list">
-            <li>
-              <Link
-                to="profile"
-                onClick={() => {
-                  setShow(false);
-                }}
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                Profile
-              </Link>
-            </li>
-            <li>Experiences</li>
-            <li>Profiles</li>
-            <li>Contact</li>
+            <Link
+              activeClass="active-drop"
+              to="profile"
+              onClick={() => {
+                setShow(false);
+              }}
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <li>Profile </li>
+            </Link>
+            <Link
+              activeClass="active-drop"
+              to="experiences"
+              onClick={() => {
+                setShow(false);
+              }}
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <li>Experiences</li>
+            </Link>
+            <Link
+              activeClass="active-drop"
+              to="projects"
+              onClick={() => {
+                setShow(false);
+              }}
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <li>Projects</li>
+            </Link>
+            <Link>
+              <li>Contact</li>
+            </Link>
           </ul>
         )}
       </div>
@@ -44,14 +67,36 @@ const Nav = () => {
         }`}
       >
         <ul>
-          <li>
-            <Link to="profile" spy={true} smooth={true} duration={500}>
-              Profile
-            </Link>
-          </li>
-          <li>Experiences</li>
-          <li>Profiles</li>
-          <li>Contact</li>
+          <Link
+            activeClass="active"
+            to="profile"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <li>Profile</li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="experiences"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <li>Experiences</li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <li>Projects</li>
+          </Link>
+          <Link>
+            <li>Contact</li>
+          </Link>
         </ul>
       </div>
     </div>

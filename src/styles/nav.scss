@@ -28,15 +28,19 @@
     padding: 0;
     animation: growDown 500ms ease-in-out forwards;
 
+    a.active-drop {
+      li {
+        background: dodgerblue;
+      }
+    }
+
     li {
       list-style: none;
       text-align: center;
-      line-height: 3.5rem;
+      line-height: 2.5rem;
+      padding: 0px;
       cursor: pointer;
-
-      a {
-        display: block;
-      }
+      display: block;
     }
 
     li:hover {
@@ -79,17 +83,23 @@
     margin: 0 auto;
     padding: 0;
 
-    li {
-      padding: 7px;
-      list-style: none;
-      text-align: center;
-      line-height: 3rem;
-      cursor: pointer;
-      height: 80px;
-      background: #232323;
+    a.active {
+      li {
+        background: dodgerblue;
+      }
+    }
 
-      a: {
-        display: block;
+    a {
+      display: block;
+
+      li {
+        padding: 16px 7px;
+        list-style: none;
+        text-align: center;
+        line-height: 3rem;
+        cursor: pointer;
+        height: 80px;
+        background: #232323;
       }
     }
 
