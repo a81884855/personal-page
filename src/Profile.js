@@ -4,14 +4,7 @@ import { Col, Container, Dropdown, Row } from "react-bootstrap";
 
 const Profile = () => {
   return (
-    <Element
-      name="profile"
-      style={{
-        minHeight: 800,
-        paddingTop: 50,
-      }}
-      className="profile"
-    >
+    <Element name="profile" className="profile">
       <Container className="profile-container">
         <h1 id="title">Profile</h1>
         <h5 id="description">I'm a creative javascript web developer</h5>
