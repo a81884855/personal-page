@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ReactTyped from "react-typed";
-import { Col } from "reactstrap";
+import { Col } from "react-bootstrap";
 import { Link } from "react-scroll";
 import { FaAngleDown } from "react-icons/fa";
 import { Waypoint } from "react-waypoint";
