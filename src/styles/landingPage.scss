@@ -5,6 +5,7 @@
   max-height: 100vh;
   z-index: 2;
   position: relative;
+  -webkit-user-select: none;
 
   .text {
     top: 28%;
