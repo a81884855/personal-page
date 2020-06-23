@@ -112,6 +112,9 @@ const Nav = () => {
           >
             <li>Contact</li>
           </Link>
+          <a id="resume" href="/resume.pdf">
+            <li>Resume</li>
+          </a>
         </ul>
       </div>
     </div>
