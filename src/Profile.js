@@ -1,6 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { Col, Container, Dropdown, Row } from "react-bootstrap";
+import { Button, Col, Container, Dropdown, Row } from "react-bootstrap";
 
 const Profile = () => {
   return (
@@ -63,6 +63,15 @@ const Profile = () => {
             </div>
           </Col>
         </Row>
+
+        <div className="see-project">
+          <div>
+            <i>The project is build on a customer made ReactJS framework.</i>
+          </div>
+          <Button href="https://github.com/a81884855/personal_page">
+            See project on Github
+          </Button>
+        </div>
       </Container>
     </Element>
   );
