@@ -6,6 +6,7 @@ import LandingPage from "./LandingPage";
 import Nav from "./Nav";
 import Profile from "./Profile";
 import Experiences from "./Experiences";
+import Projects from "./Projects";
 import Contact from "./Contact";
 import * as serviceWorker from "./serviceWorker";
 import { Provider as NavProvider } from "./context/NavContext";
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Nav />
       <Profile />
       <Experiences />
+      <Projects />
       <Contact />
     </NavProvider>
   </React.StrictMode>,
