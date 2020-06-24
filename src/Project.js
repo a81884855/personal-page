@@ -1,12 +1,14 @@
 import React from "react";
-
+import { FaCreativeCommonsSamplingPlus } from "react-icons/fa";
 const Project = (data) => {
   const { name, description, images, website } = data;
   console.log(images);
   return (
     <div className="project-detail">
       <a href={website}>
-        <div className="corner">#</div>
+        <div className="corner">
+          <FaCreativeCommonsSamplingPlus />
+        </div>
         <div className="description">
           <h1>{name}</h1>
           <p>{description}</p>
