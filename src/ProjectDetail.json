@@ -55,7 +55,7 @@
       "AWS",
       "Bootstrap"
     ],
-    "description": "Space X rockets launches information platform",
+    "description": "Space X rockets launches information tracker platform",
     "images": "./images/spacex.png"
   },
   {
