@@ -8,7 +8,6 @@ const Nav = () => {
   const {
     state: { leaveLandingPage },
   } = useContext(NavContext);
-  console.log(leaveLandingPage);
 
   return (
     <div>

@@ -11,7 +11,7 @@ const Projects = () => {
         <h1 id="title">Projects</h1>
         <Row className="project-container">
           {projectsData.map((data) => (
-            <Col className="project" sm={10} md={6}>
+            <Col className="project" key={data.name} sm={10} md={6}>
               <Project {...data} />
             </Col>
           ))}
