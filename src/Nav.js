@@ -12,7 +12,7 @@ const Nav = () => {
 
   return (
     <div>
-      <div className={`nav d-md-none ${leaveLandingPage ? "active" : ""}`}>
+      <div className={`nav d-lg-none ${leaveLandingPage ? "active" : ""}`}>
         <div className="toggle" onClick={() => setShow(!show)}>
           <AiOutlineMenu />
         </div>
@@ -71,7 +71,7 @@ const Nav = () => {
       </div>
 
       <div
-        className={`side-nav d-none d-md-block ${
+        className={`side-nav d-none d-lg-block ${
           leaveLandingPage ? "" : "active"
         }`}
       >
