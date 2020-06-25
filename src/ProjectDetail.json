@@ -43,8 +43,8 @@
   },
   {
     "name": "Space X",
-    "website": "/space-x",
-    "github": "https://github.com/a81884855/space-x",
+    "website": "https://a81884855.github.io/space-x-client/#/",
+    "github": "https://github.com/a81884855/space-x-client",
     "technologies": [
       "Full-Stack",
       "Apollo",
